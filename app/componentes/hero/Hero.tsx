@@ -26,7 +26,7 @@ export default function Hero() {
 
                     <div className="mt-8 flex flex-col sm:flex-row gap-4">
                         <a
-                            href="https://wa.me/55996910672"
+                            href="https://wa.me/55996910672?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20visita%20para%20conhecer%20a%20academia"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-6 py-3 bg-cyan-400 text-black font-semibold rounded-md text-center hover:bg-cyan-500 transition"
