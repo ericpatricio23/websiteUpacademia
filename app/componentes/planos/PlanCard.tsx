@@ -44,24 +44,24 @@ export default function PlanCard({
                 }
       `}
         >
-            {/* Glow fundo */}
+
             {highlight && (
                 <div className="absolute inset-0 rounded-2xl bg-cyan-400/10 blur-2xl -z-10" />
             )}
 
-            {/* Título */}
+
             <h3 className="text-xl font-semibold mb-2 text-center tracking-wide">
                 {title}
             </h3>
 
-            {/* Período */}
+
             <div className="text-center mb-6">
                 <span className="text-sm text-gray-400">
                     /{period}
                 </span>
             </div>
 
-            {/* Benefícios */}
+
             <ul className="space-y-3 mb-6 text-sm">
                 {features.map((item, index) => (
                     <li
@@ -82,7 +82,7 @@ export default function PlanCard({
                 ))}
             </ul>
 
-            {/* CTA */}
+
             <a
                 href={`https://wa.me/${whatsappNumber}?text=${message}`}
                 target="_blank"

@@ -13,7 +13,7 @@ export default function Map() {
                     </p>
                 </div>
 
-                {/* Container do mapa */}
+
                 <div className="w-full h-[300px] md:h-[400px] rounded-2xl overflow-hidden border border-slate-800 shadow-lg hover:border-cyan-400/60 transition">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3462.514304045336!2d-55.7995672!3d-29.791682700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95aab9d37f5b1abb%3A0x4fa2e4b5a3115eb7!2sAv.%20Assis%20Brasil%2C%20336%20-%20Centro%2C%20Alegrete%20-%20RS%2C%2097543-001!5e0!3m2!1spt-BR!2sbr!4v1770493102030!5m2!1spt-BR!2sbr"
