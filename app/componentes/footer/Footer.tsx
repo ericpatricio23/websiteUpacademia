@@ -61,8 +61,8 @@ export default function Footer() {
                             <FaClock className="text-cyan-400 mt-1" />
 
                             <span>
-                                Seg a Sex: 06:00 às 22:00 <br />
-                                Sáb e Dom: 08:00 às 15:00
+                                Seg à Sex: 05:30 às 22:00 <br />
+                                Sáb e Feriados: 09:00 às 15:00
                             </span>
 
                         </li>
@@ -93,8 +93,8 @@ export default function Footer() {
                         </li>
 
                         <li>
-                            <Link href="/#planos" className="hover:text-cyan-400 transition">
-                                Planos
+                            <Link href="/#map" className="hover:text-cyan-400 transition">
+                                Localização
                             </Link>
                         </li>
 
