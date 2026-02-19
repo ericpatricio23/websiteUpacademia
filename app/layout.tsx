@@ -4,33 +4,55 @@ import Header from "./componentes/header/Header"
 import Footer from "./componentes/footer/Footer"
 
 export const metadata: Metadata = {
-  title: "UpAcademia | Eleve seu treino ao próximo nível",
+  metadataBase: new URL("https://www.upacademiafit.com.br"),
+
+  title: {
+    default: "UpAcademia | Academia em Alegrete-RS",
+    template: "%s | UpAcademia",
+  },
 
   description:
-    "UpAcademia é uma academia moderna em Alegrete-RS, com equipamentos de qualidade e profissionais capacitados.",
+    "UpAcademia é uma academia moderna em Alegrete-RS, com musculação, treinos personalizados e profissionais qualificados. Estrutura completa para elevar seu treino.",
 
-  keywords: "academia, gym, musculação, treino, fitness, Alegrete RS",
+  keywords: [
+    "academia em Alegrete",
+    "academia Alegrete RS",
+    "musculação Alegrete",
+    "treino personalizado",
+    "fitness Alegrete",
+    "UpAcademia"
+  ],
 
   authors: [{ name: "UpAcademia" }],
 
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+
+  alternates: {
+    canonical: "/",
   },
 
   openGraph: {
-    title: "UpAcademia | Eleve seu treino ao próximo nível",
-
+    title: "UpAcademia | Academia em Alegrete-RS",
     description:
-      "Treine na UpAcademia com estrutura moderna e acompanhamento profissional.",
-
-    url: "https://upacademia.com.br",
-
+      "Treine na UpAcademia em Alegrete-RS com estrutura moderna e acompanhamento profissional.",
+    url: "https://www.upacademiafit.com.br",
     siteName: "UpAcademia",
-
     locale: "pt_BR",
-
     type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "UpAcademia | Academia em Alegrete-RS",
+    description:
+      "Academia moderna em Alegrete-RS com treinos personalizados e estrutura completa.",
   },
 
   category: "fitness",
@@ -44,17 +66,12 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className="min-h-screen flex flex-col antialiased bg-slate-950 text-white">
-
         <Header />
-
-        <main className="flex-1">
-          {children}
-        </main>
-
+        <main className="flex-1">{children}</main>
         <Footer />
-
       </body>
     </html>
   )
 }
+
 
